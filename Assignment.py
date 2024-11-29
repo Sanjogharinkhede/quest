@@ -1,13 +1,14 @@
-"""
-Assignment 3.1:
-Factorial Function with recursion
-Time complexity: O(1)
-Space complexity: O(n)
-So best for saving Time
-"""
 
 
 def fact(n):  # function definition so code can be modularize
+    """
+    Assignment 3.1:
+    Factorial Function with recursion
+    Time complexity: O(1)
+    Space complexity: O(n)
+    So best for saving Time
+    """
+
     if n < 0:  # check whether input is correct or not
         return "Invalid"
     if n == 0 or n == 1:  # check that is number is 0 or 1 if it is break function calling and return a value
@@ -16,16 +17,18 @@ def fact(n):  # function definition so code can be modularize
         return n * fact(n - 1)  # say n=5  fact will be 5*4*3*2*1  so n*(n-1)*(n-2)....1
 
 
-"""
-Assignment 3.1:
-Factorial Function with loop
-Time complexity: O(n)  
-Space complexity: O(1)  
-So best for saving Spaces 
-"""
+
 
 
 def fact2(n):  # function definition so code can be modularize
+    """
+    Assignment 3.1:
+    Factorial Function with loop
+    Time complexity: O(n)
+    Space complexity: O(1)
+    So best for saving Spaces
+    """
+
     if n < 0:  # check whether input is correct or not
         return "Invalid"
     if n == 0 or n == 1:  # check that is number is 0 or 1 initially so not need for going through loop
@@ -38,26 +41,27 @@ def fact2(n):  # function definition so code can be modularize
     return factorial  # return calculated value of factorial
 
 
-"""#######################################################################################################################"""
-"""
-Assignment 3.2:
-Get the nth digit of fibonacci with recursion
-Time complexity: O(1)
-Space complexity: O(n)
-So best for saving Time
 
-it is a series where every number is sum of previous two number of that series 
-starts with 0,1
- then 0+1=1 third num=1 
- then 1+1=2 third num=2
- then 1+1=3 third num=3
-
-so final series will be like 0,1,1,2,3,5,8,13,21
-so to get 5th digit we can have sum if 4th digit and 3rd digit  
-"""
 
 
 def fibonacci(n):
+    """
+    Assignment 3.2:
+    Get the nth digit of fibonacci with recursion
+    Time complexity: O(1)
+    Space complexity: O(n)
+    So best for saving Time
+
+    it is a series where every number is sum of previous two number of that series
+    starts with 0,1
+     then 0+1=1 third num=1
+     then 1+1=2 third num=2
+     then 1+1=3 third num=3
+
+    so final series will be like 0,1,1,2,3,5,8,13,21
+    so to get 5th digit we can have sum if 4th digit and 3rd digit
+    """
+
     if n < 0:  # if passed an negative number invalid status
         return "Invalid"
     if n == 0:  # if passed 0 number first digit or reached to 0 returns 1
@@ -68,16 +72,16 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-"""
-Assignment 3.2:
-Get the nth digit of fibonacci with 
-pythonic way of swapping number 
-Time complexity: O(n)
-Space complexity: O(1)
-"""
-
 
 def fibonacci2(n):
+    """
+    Assignment 3.2:
+    Get the nth digit of fibonacci with
+    pythonic way of swapping number
+    Time complexity: O(n)
+    Space complexity: O(1)
+    """
+
     if (n < 0):
         return "Invalid"
     if n == 0:
@@ -92,16 +96,18 @@ def fibonacci2(n):
     return b
 
 
-"""
-Assignment 3.2:
-Get the nth digit of fibonacci with 
-basic way of swapping number 
-Time complexity: O(n)
-Space complexity: O(1)
-"""
+
 
 
 def fibonacci3(n):
+    """
+    Assignment 3.2:
+    Get the nth digit of fibonacci with
+    basic way of swapping number
+    Time complexity: O(n)
+    Space complexity: O(1)
+    """
+
     if (n < 0):
         return "Invalid"
     if n == 0:
