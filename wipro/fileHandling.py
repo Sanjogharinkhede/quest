@@ -53,7 +53,7 @@ def pickleHandling():
     # os.chdir("ChangeToDir")
     # os.rmdir("makeNewDir")
 
-    print(os.listdir("./"))
+    print(os.listdir("../"))
     print(os.path.isdir("emails.txt"))  #check it is dir
     print(os.stat("emails.txt"))
     print(os.stat("emails.txt").st_mtime)
