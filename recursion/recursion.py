@@ -1,3 +1,17 @@
+"""
+    File contains Recursion  for
+    sum till number
+    reverse array
+    palindrome string
+    GENERATE ALL SUB SEQ
+    GENERATE ALL SUB SEQ with Sum=K
+    GENERATE First SUB SEQ with Sum=K
+
+    *****IMP*****
+    COUNT OF SUB SEQ with Sum=K
+    *****IMP*****
+"""
+
 def sum(n):
     if n==1:
         return 1
@@ -91,5 +105,5 @@ def countOfSubSeqKSum(arr,k,val,i):
     val-=arr[i]
     r=countOfSubSeqKSum(arr,k,val,i+1)
     return l+r
-print(countOfSubSeqKSum([1,7,9,8,2,3,3,8,-1,1],9,0,0))
-print(countOfSubSeqKSum([1,7,9,8,2,3,3,8],9,0,0))
+# print(countOfSubSeqKSum([1,7,9,8,2,3,3,8,-1,1],9,0,0))
+# print(countOfSubSeqKSum([1,7,9,8,2,3,3,8],9,0,0))
