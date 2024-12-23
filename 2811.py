@@ -166,3 +166,76 @@ class Solution:
         traverse(root)
 
         return result
+
+
+import re
+
+
+def w1():
+    match = re.match(r"Hello", "Hello, World!")
+    print(f"Match found: {match.group()}")
+
+
+
+def w2():
+    search = re.search(r"Python", "Welcome to Python programming!")
+    print(f"Search found: {search.group()} at position {search.start()}")
+
+
+def w3():
+    matches = re.findall(r"in", "The rain in Spain falls mainly in the plain.")
+    print(f"All matches: {matches}")
+
+
+def w4():
+    matches = re.finditer( r"Python", "Python is fun. Learning Python is easy.")
+    for match in matches:
+        print(f"Match '{match.group()}' found at position {match.start()}")
+
+
+def w5():
+    """Split a string by the pattern."""
+    split_result = re.split(r"[,;|]", "apple,banana;orange|grape")
+    print(f"Split result: {split_result}")
+
+
+def w6():
+    """Substitute a pattern with a string."""
+
+    replaced = re.sub(r"\d", "#", "I have 2 cats and 3 dogs.")
+    print(f"Sub result: {replaced}")
+
+
+def w7():
+    """Substitute a pattern and return count of replacements."""
+    replaced, count = re.subn( r"\d", "#", "I have 2 cats and 3 dogs.")
+    print(f"Replaced text: {replaced}, Substitutions made: {count}")
+
+
+def w8():
+    """Compile a regex pattern for reuse."""
+    pattern = re.compile(r"\d{3}-\d{2}-\d{4}")
+    text = "My SSN is 123-45-6789."
+    match = pattern.search(text)
+    if match:
+        print(f"Found: {match.group()}")
+
+
+def w9():
+    """Use groups to extract parts of a match."""
+    text = "My phone number is 123-456-7890."
+    pattern = r"(\d{3})-(\d{3})-(\d{4})"
+    match = re.search(pattern, text)
+    if match:
+        print(f"Full Match: {match.group()}")
+        print(f"Area Code: {match.group(1)}")
+        print(f"Local Code: {match.group(2)}")
+        print(f"Line Number: {match.group(3)}")
+
+
+def w10():
+    """Use flags to modify regex behavior."""
+    matches = re.findall(r"python", "Python is amazing. python is fun.", re.IGNORECASE)
+    print(f"Matches with flag: {matches}")
+
+

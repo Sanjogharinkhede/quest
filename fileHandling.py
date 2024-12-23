@@ -25,7 +25,7 @@ def handleFile(fileName, write=False):
                     getFile.write(line)
 
 
-# handleFile("emails.txt", True)
+# handleFile("emails.txt")
 
 
 def pickleHandling():
@@ -60,4 +60,13 @@ def pickleHandling():
     print(time.asctime(time.gmtime(os.stat("emails.txt").st_mtime)))
     print(os.getcwd())
 
-pickleHandling()
+# pickleHandling()
+
+
+def r():
+    with open("testcase.txt", "w") as getFile:
+        getFile.write("[")
+        for i in range(10 ** 5):
+            getFile.write(f"1,")
+        getFile.write("]")
+r()
