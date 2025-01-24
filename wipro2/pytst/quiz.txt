@@ -1,0 +1,274 @@
+Quiz Questions
+1. Which of the following is a correct example of a list comprehension?
+a) list = [x for x in range(10)]
+b) list = x in range(10)
+c) list = for x in range(10): x
+d) list = map(range(10))
+
+ans:A
+
+----------------------------------------
+
+2. What does an iterator in Python do?
+a) Stores all elements in memory at once
+b) Allows iterating through elements one at a time
+c) Automatically generates infinite values
+d) Executes functions in parallel
+
+
+ans:B
+
+----------------------------------------
+
+3. Which keyword is used to create a generator in Python?
+a) yield
+b) return
+c) break
+d) continue
+
+
+ans:A
+
+----------------------------------------
+
+
+4. What is the purpose of a Python decorator?
+a) To create loops
+b) To modify or extend the behavior of a function
+c) To filter elements from a list
+d) To handle exceptions
+
+
+ans:B
+
+----------------------------------------
+
+5. Which of the following is an example of a lambda function in Python?
+a) lambda x: x * 2
+b) def multiply(x): return x * 2
+c) map(x: x * 2)
+d) for x in range(5): x * 2
+
+
+ans:A
+
+----------------------------------------
+
+
+6. In the following code, what will next(gen) do?
+
+def gen():
+    yield 1
+    yield 2
+gen = gen()
+
+a) Return 1
+b) Return 2
+c) Raise a StopIteration error
+d) Return a list of [1, 2]
+
+
+ans:A
+
+----------------------------------------
+
+
+7. Which of the following functions is not suitable for lambda functions?
+a) map()
+b) filter()
+c) reduce()
+d) def()
+
+ans:D
+
+----------------------------------------
+
+
+
+8. How do you apply a decorator to a Python function?
+a) By calling the decorator inside the function
+b) By prefixing the function with the @decorator_name
+c) By passing the decorator as an argument to the function
+d) By using the yield keyword
+
+ans:B
+
+----------------------------------------
+
+
+
+9. What will the following code output?
+
+list1 = [1, 2, 3, 4]
+squared = [x**2 for x in list1]
+print(squared)
+
+a) [1, 4, 9, 16]
+b) [1, 2, 3, 4]
+c) [1, 8, 27, 64]
+d) [1, 4, 9]
+
+ans:A
+
+----------------------------------------
+
+
+
+
+10. What is the result of this code?
+
+from functools import reduce
+numbers = [1, 2, 3, 4]
+result = reduce(lambda x, y: x + y, numbers)
+print(result)
+
+a) 10
+b) 24
+c) [1, 2, 3, 4]
+d) TypeError
+
+ans:A
+
+----------------------------------------
+
+Additional Quiz Questions
+1. Which of the following is the correct syntax to create a list of squares using list comprehensions?
+a) [x * 2 for x in 1, 2, 3, 4]
+b) [x ** 2 for x in range(5)]
+c) list(x ** 2 for x in range(5))
+d) [x for x in range(5) ** 2]
+
+
+ans:B
+
+----------------------------------------
+
+2. What is the purpose of the yield keyword in Python generators?
+a) To stop a function permanently
+b) To return a value and pause execution of the generator
+c) To initialize an iterator
+d) To define a function
+
+
+ans:B
+
+----------------------------------------
+
+3. Which of the following methods converts a generator into a list?
+a) list()
+b) tuple()
+c) set()
+d) dict()
+
+
+ans:A
+
+----------------------------------------
+
+4. Which of the following is not a valid use case for a Python decorator?
+a) Adding logging to a function
+b) Adding authentication to a function
+c) Iterating over elements
+d) Modifying arguments to a function
+
+
+ans:C
+
+----------------------------------------
+
+
+5. What happens when a generator function reaches the end of its code without encountering a yield?
+a) Returns None
+b) Raises a StopIteration exception
+c) Freezes the execution permanently
+d) Continues running indefinitely
+
+
+ans:B
+
+----------------------------------------
+
+
+6. In Python, what is the equivalent of the following list comprehension?
+
+squares = [x**2 for x in range(5)]
+
+a)
+
+squares = []
+for x in range(5):
+    squares.append(x**2)
+
+b)
+
+squares = map(lambda x: x**2, range(5))
+
+c) Both a and b
+d) None of the above
+
+
+ans:A
+
+----------------------------------------
+
+
+7. Which of the following is true about Python’s map() function?
+a) It always returns a list
+b) It applies a function to each item of an iterable
+c) It filters elements based on a condition
+d) It reduces a list to a single value
+
+
+
+ans:B
+
+----------------------------------------
+
+
+8. What does the following code do?
+
+def decorator(func):
+    def wrapper():
+        print("Before the function call")
+        func()
+        print("After the function call")
+    return wrapper
+
+@decorator
+def say_hello():
+    print("Hello!")
+say_hello()
+
+a) Prints only "Hello!"
+b) Adds functionality before and after "Hello!" is printed
+c) Does nothing and returns the original function
+d) Raises an error
+
+
+ans:B
+
+----------------------------------------
+
+
+
+9. Which of the following is not true about Python’s filter() function?
+a) It applies a function to each element of an iterable
+b) It filters elements based on whether the function returns True or False
+c) It requires the function argument to return a boolean value
+d) It returns a generator-like object
+
+
+ans:A
+
+----------------------------------------
+
+10. How is the reduce() function different from map() and filter()?
+a) It applies a function to every element in an iterable and returns the modified iterable
+b) It combines elements of an iterable into a single value
+c) It works only on lists
+d) It does not use lambda functions
+
+
+ans:B
+
+----------------------------------------
