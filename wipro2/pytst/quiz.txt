@@ -272,3 +272,108 @@ d) It does not use lambda functions
 ans:B
 
 ----------------------------------------
+
+
+
+Basic Quiz
+1. Fixtures
+What is the purpose of defining a fixture in conftest.py?
+a. To write test cases
+b. To make reusable setups available to multiple test files
+c. To store test results
+d. To import other Python modules
+
+ans:B
+
+----------------------------------------
+
+2. Fixtures
+True or False: Fixtures defined in conftest.py need to be imported manually in test files.
+
+
+ans:False
+----------------------------------------
+
+
+3. Parameterizing Tests
+Which pytest decorator is used to run a test with multiple sets of input values?
+a. @pytest.fixture
+b. @pytest.mark.parametrize
+c. @pytest.mark.many_tests
+d. @pytest.mark.iterate
+
+ans:B
+
+----------------------------------------
+
+4. Parameterizing Tests
+Fill in the blanks:
+In the syntax @pytest.mark.parametrize("a, b", [(1, 2), (3, 4)]), the values (1, 2) and (3, 4) represent __.
+a. Variable names
+b. Input data sets
+c. Test cases
+d. Error messages
+
+ans:B
+
+----------------------------------------
+
+5. Assert Statements
+What happens when an assert statement fails?
+a. The program continues running
+b. The program stops and raises an AssertionError
+c. The program raises a ValueError
+d. The program ignores the
+
+ans:B
+
+----------------------------------------
+
+6. Assert Statements
+True or False: An assert statement can include an optional error message.
+ ans:True
+
+----------------------------------------
+7. Testing Exceptions
+Which pytest context manager is used to test if a specific exception is raised?
+a. pytest.test
+b. pytest.raises
+c. pytest.exception
+d. pytest.error
+
+ans:B
+
+----------------------------------------
+
+
+8. Testing Exceptions
+In the following code, what is the purpose of the match argument?
+
+with pytest.raises(ValueError, match="Invalid input"):
+    my_function("bad_input")
+
+a. To raise the exception
+b. To check if the exception contains the specific message “Invalid input”
+c. To import the function being tested
+d. To handle the exception
+
+ ans:B
+
+----------------------------------------
+
+9. General
+What is the benefit of parameterized tests?
+a. To speed up the execution of tests
+b. To test multiple input combinations with one test function
+c. To automatically write test cases
+d. To handle errors gracefully
+ ans:B
+
+----------------------------------------
+
+10. General
+True or False: pytest.raises will fail the test if the specified exception is not raised.
+
+ans:True
+
+----------------------------------------

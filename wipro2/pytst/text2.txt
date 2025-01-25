@@ -20,7 +20,16 @@ ans:A
 9 ans:A
 10 ans:B
 
-
+B
+False
+B
+B
+B
+True
+B
+B
+B
+True
 
 
 
