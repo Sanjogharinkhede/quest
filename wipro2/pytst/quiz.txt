@@ -377,3 +377,179 @@ True or False: pytest.raises will fail the test if the specified exception is no
 ans:True
 
 ----------------------------------------
+
+
+
+
+
+
+
+
+
+1. What is pytest used for?
+
+a) Designing websites
+b) Running and writing tests for Python code
+c) Debugging Java programs
+d) Compiling Python code
+
+ans:B
+
+----------------------------------------
+
+2. What is the default command to run all tests using pytest?
+
+a) run_tests
+b) pytest
+c) python test.py
+d) run pytest
+ ans:B
+
+----------------------------------------
+
+
+3. What is the naming convention for test files in pytest?
+
+a) Files must start with test_
+b) Files must end with _test
+c) Files must start and end with test_
+d) No specific naming is required
+
+ans:A
+
+----------------------------------------
+
+4. How do you mark a test to be skipped in pytest?
+
+a) @pytest.mark.skip(reason="reason_here")
+b) @pytest.mark.ignore
+c) @pytest.skip
+d) @pytest.exclude
+
+ans:A
+
+----------------------------------------
+
+5. What does the assert keyword do in pytest?
+
+a) Stops the test from running
+b) Checks if a condition is true
+c) Marks a test as skipped
+d) Logs the result of a test
+
+ans:B
+
+----------------------------------------
+
+6. How can you run tests in verbose mode using pytest?
+
+a) pytest -d
+b) pytest -verbose
+c) pytest -v
+d) pytest --run
+
+ans:C
+
+----------------------------------------
+
+
+7. What is the purpose of pytest fixtures?
+
+a) To skip tests
+b) To provide reusable setup and teardown code
+c) To run tests in parallel
+d) To generate test reports
+
+ans:B
+
+----------------------------------------
+
+8. Which pytest marker is used for tests expected to fail?
+
+a) @pytest.mark.skip
+b) @pytest.mark.fail
+c) @pytest.mark.xfail
+d) @pytest.mark.error
+
+ans:C
+
+----------------------------------------
+
+9. How do you dynamically skip a test during execution?
+
+a) pytest_abort()
+b) pytest.skip("reason")
+c) @pytest.mark.skip
+d) pytest.fail()
+
+ans:B
+
+----------------------------------------
+
+10. What is the purpose of pytest.ini or pyproject.toml?
+
+a) To store test results
+b) To define configurations for pytest
+c) To run pytest from a GUI
+d) To install pytest plugins
+
+ans:B
+
+----------------------------------------
+
+11. How do you install pytest in your Python environment?
+
+a) pip install pytest
+b) install pytest
+c) pytest install
+d) python pytest
+
+ans:A
+
+----------------------------------------
+
+12. Which command is used to run a specific test file in pytest?
+
+a) pytest file.py
+b) pytest run file.py
+c) pytest --file file.py
+d) run file.py
+
+ans:A
+
+----------------------------------------
+
+13. What is the use of the -k option in pytest?
+
+a) To mark tests to be skipped
+b) To run tests matching a specific substring
+c) To disable all tests in a file
+d) To sort test results
+
+ans:B
+
+----------------------------------------
+
+14. How do you run tests in parallel using pytest?
+
+a) Use the --parallel flag
+b) Use the pytest-parallel plugin
+c) Use the pytest-xdist plugin with the -n option
+d) pytest doesn’t support parallel execution
+
+ans:C
+
+----------------------------------------
+
+
+
+15. What does the -q option do when running pytest?
+
+a) Runs tests in parallel
+b) Displays a quiet output with less detail
+c) Runs tests with extra logging
+d) Skips all tests
+
+ans:B
+
+----------------------------------------

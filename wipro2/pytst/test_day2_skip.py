@@ -54,3 +54,9 @@ def test_even(gen_even):
         assert i%2==0, f"i am at{i}"
 
 
+def test_approx():
+
+    assert 0.2+0.1 == 0.3 , f"{.2+.1}"
+
+def test_approx2():
+    assert 0.2+0.1==pytest.approx(0.3)
