@@ -22,3 +22,18 @@ print(iterator)
 print(next(iterator))
 print(next(iterator))
 print(next(iterator))
+
+
+x=[[1,2],[4,3],[3,3,5]]
+print([item for row in x for item in row])
+print([row for item in x for row in item])
+print([x[row][item] for row in range(len(x)) for item in range(len(x[row]))])
+
+
+print([char + num for char in "AB" for num in [1, 2]])
+
+print([[char, num] for char in "AB" for num in [1, 2]])
+
+print([(char, num) for char in "AB" for num in [1, 2]])
+
+# print([f"(char)(num)" for char in "AB" for num in [1, 2]])
